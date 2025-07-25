@@ -20,7 +20,6 @@ public class BookingController {
     public BookingController(BookingService bookingService) {
         this.bookingService = bookingService;
     }
-
     @PostMapping
     public ResponseEntity<CreateBookingResponseDto> createBooking(@RequestBody CreateBookingDto createBookingDto) throws IOException {
 
@@ -29,8 +28,8 @@ public class BookingController {
 
 
     @PostMapping("/{bookingId}")
-    public ResponseEntity<UpdateBookingResponseDto> updateBooking(@RequestBody UpdateBookingRequestDto requestDto,
-                                                                  @PathVariable Long bookingId) {
+    public ResponseEntity<UpdateBookingResponseDto> updateBooking(@RequestBody UpdateBookingRequestDto requestDto, @PathVariable Long bookingId) {
         return new ResponseEntity<>(bookingService.updateBooking(requestDto, bookingId), HttpStatus.OK);
     }
+
 }
