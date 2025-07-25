@@ -1,6 +1,7 @@
 package com.example.uberbookingservice.dto;
 
-import com.example.uberprojectentityservice.models.ExactLocation;
+
+import com.example.uberprojectentity.models.ExactLocation;
 import lombok.*;
 
 @Getter
