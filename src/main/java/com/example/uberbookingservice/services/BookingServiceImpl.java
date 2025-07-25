@@ -10,12 +10,13 @@ import com.example.uberbookingservice.repositories.PassengerRepository;
 import com.example.uberprojectentity.models.Booking;
 import com.example.uberprojectentity.models.BookingStatus;
 import com.example.uberprojectentity.models.Passenger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 
-import java.io.IOException;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -30,8 +31,8 @@ public class BookingServiceImpl implements BookingService{
 
 
 
-   private static final String LOCATION_SERVICE = "http://localhost:7777";
-
+   private static final String LOCATION_SERVICE = "http://localhost:8989";
+    @Autowired
     public BookingServiceImpl(PassengerRepository passengerRepository,
                               BookingRepository bookingRepository,
                               DriverRepository driverRepository) {

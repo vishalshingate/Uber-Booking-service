@@ -35,7 +35,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    implementation files('C:/Users/vshingate/.m2/repository/com/example/UberProject-Entity/0.0.5-SNAPSHOT/UberProject-Entity-0.0.5-SNAPSHOT.jar')
+    implementation files('C:/Users/vshingate/.m2/repository/com/example/UberProject-Entity/0.0.6-SNAPSHOT/UberProject-Entity-0.0.6-SNAPSHOT.jar')
 }
 
 tasks.named('test') {
